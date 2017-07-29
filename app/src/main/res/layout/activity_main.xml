@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ced7db"
+    tools:context="com.jasminebreedlove.mathtrainer.MainActivity">
+
+
+    <TextView
+        android:id="@+id/selectCategoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Choose A Category:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chooseAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectCategoryText"
+        android:layout_centerInParent="true"
+        android:layout_column="5"
+        android:layout_marginBottom="30dp"
+        android:layout_row="6"
+        android:background="@drawable/button_design"
+        android:fontFamily="casual"
+        android:onClick="goToCategory"
+        android:padding="15dp"
+        android:text="Addition"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chooseSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseAdd"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="casual"
+        android:onClick="goToCategory"
+        android:padding="15dp"
+        android:text="Subtraction"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chooseMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseSub"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="casual"
+        android:onClick="goToCategory"
+        android:padding="15dp"
+        android:text="Multiplication"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chooseDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseMultiply"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="casual"
+        android:onClick="goToCategory"
+        android:padding="15dp"
+        android:text="Division"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

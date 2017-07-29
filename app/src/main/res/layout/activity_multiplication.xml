@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff4081"
+    tools:context="com.jasminebreedlove.mathtrainer.Multiplication">
+
+    <TextView
+        android:id="@+id/pauseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="casual"
+        android:text="PAUSED"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:id="@+id/lowerRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff4081">
+
+        <TextView
+            android:id="@+id/timerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="20s"
+            android:textColor="@android:color/black"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scoreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="casual"
+            android:text="0/10"
+            android:textColor="@android:color/black"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:fontFamily="casual"
+            android:text="10 * 3 = ?"
+            android:textColor="@android:color/black"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/equation"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_design"
+                android:fontFamily="casual"
+                android:onClick="selectedAnswer"
+                android:tag="0"
+                android:text="30"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_design"
+                android:fontFamily="casual"
+                android:onClick="selectedAnswer"
+                android:tag="1"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_design"
+                android:fontFamily="casual"
+                android:onClick="selectedAnswer"
+                android:tag="2"
+                android:text="24"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_design"
+                android:fontFamily="casual"
+                android:onClick="selectedAnswer"
+                android:tag="3"
+                android:text="50"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </GridLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
