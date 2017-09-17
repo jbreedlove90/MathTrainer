@@ -8,18 +8,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    Button addButton, subButton, mulButton, divButton;
+    ImageButton addButton, subButton, mulButton, divButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addButton = (Button)findViewById(R.id.chooseAdd);
-        subButton = (Button)findViewById(R.id.chooseSub);
-        mulButton = (Button)findViewById(R.id.chooseMultiply);
-        divButton = (Button)findViewById(R.id.chooseDivide);
+        addButton = (ImageButton)findViewById(R.id.chooseAdd);
+        subButton = (ImageButton)findViewById(R.id.chooseSub);
+        mulButton = (ImageButton)findViewById(R.id.chooseMultiply);
+        divButton = (ImageButton)findViewById(R.id.chooseDivide);
     } // end onCreate
 
     public void goToCategory(View view) {
