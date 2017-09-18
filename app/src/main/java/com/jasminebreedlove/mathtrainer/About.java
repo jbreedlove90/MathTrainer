@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class About extends AppCompatActivity {
-    TextView versionNum, soundsTV, imagesTV;
+    TextView versionNum, soundsTV, imagesTV, orbIconsTV;
     Button rateBtn;
 
     /*
@@ -61,7 +61,9 @@ public class About extends AppCompatActivity {
         soundsTV = (TextView)findViewById(R.id.soundsProvided);
         imagesTV = (TextView)findViewById(R.id.imagesProvided);
         rateBtn = (Button)findViewById(R.id.rateButton);
+        orbIconsTV = (TextView)findViewById(R.id.orbIconsProvided);
 
+        // navigate to url on user click
         if (soundsTV != null) {
             soundsTV.setMovementMethod(LinkMovementMethod.getInstance());
         }
@@ -69,6 +71,9 @@ public class About extends AppCompatActivity {
         if (imagesTV != null) {
             imagesTV.setMovementMethod(LinkMovementMethod.getInstance());
         }
+
+        if (orbIconsTV != null)
+            orbIconsTV.setMovementMethod(LinkMovementMethod.getInstance());
 
     } // on create
 

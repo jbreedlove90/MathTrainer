@@ -12,10 +12,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Version: 1.0"
+        android:text="Version: 1.1"
         android:textSize="24sp"
         android:textColor="@android:color/black"
         android:textStyle="bold" />
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@id/versionNum"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:text="@string/sound_link"
@@ -40,10 +40,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@id/soundsProvided"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:text="@string/image_link"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orbIconsProvided"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imagesProvided"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/red_icons"
         android:textSize="24sp"
         android:textColor="@android:color/black"
         android:textStyle="bold" />
@@ -52,11 +66,11 @@
         android:id="@+id/rateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imagesProvided"
+        android:layout_below="@id/orbIconsProvided"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="6dp"
         android:onClick="rateApp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:text="Rate This App"
@@ -64,8 +78,5 @@
         android:textColor="@android:color/white"
         android:background="@drawable/button_design"
         android:drawableStart="@android:drawable/btn_star_big_on"/>
-
-
-
 
 </RelativeLayout>
